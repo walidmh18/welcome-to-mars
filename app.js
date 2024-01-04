@@ -1,0 +1,33 @@
+const img1 = document.getElementById('hero')
+const background = document.getElementById('background')
+const img0 = document.getElementById('img1')
+const img2 = document.getElementById('img2')
+const img3 = document.getElementById('img3')
+const img4 = document.getElementById('img4')
+const img5 = document.getElementById('img5')
+const img6 = document.getElementById('img6')
+const img7 = document.getElementById('img7')
+const img8 = document.getElementById('img8')
+const img9 = document.getElementById('img9')
+const img10 = document.getElementById('img10')
+const blank = document.querySelector('.blank')
+console.log(img1);
+window.addEventListener('scroll', () => {
+    // img0.style.bottom =0 + 'px'
+    background.style.bottom = scrollY *-2 + 'px'
+    img2.style.bottom = scrollY * 1.3 + 'px'
+    img3.style.bottom = scrollY * 1.4 + 'px'
+    img4.style.bottom = scrollY * 1.5 + 'px'
+    img5.style.bottom = scrollY * 1.7 + 'px'
+    blank.style.bottom = (scrollY * 2 - 1200)+ 'px'
+    img6.style.bottom = scrollY * 1.5 + 'px'
+    img6.style.scale = (scrollY *-0.2 / 800 +1)
+    img7.style.bottom = (scrollY * 1.7 - 30) + 'px'
+    img7.style.scale = (scrollY *-0.2 / 800 +1)
+    img8.style.bottom = scrollY * 1.7 + 'px'
+    // img8.style.display ='none'
+    img9.style.bottom = scrollY * 1.7 + 'px'
+    img9.style.scale = (scrollY *-0.2 / 1000 +1)
+    img10.style.bottom = scrollY * 2 + 'px'
+    // img10.style.display = 'none'
+})
